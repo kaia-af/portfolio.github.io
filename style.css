@@ -377,7 +377,15 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Optional: Add some spacing between list items */
+  }
+  
 /*------css for small screen-----*/
 @media only screen and (max-width: 600px){
     #header{

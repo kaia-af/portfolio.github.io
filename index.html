@@ -1,207 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arifah Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7ea61234e1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo2.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">My Work</a></li>
-                
-                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Mechanical & Simulation Engineer | Game Developer </p>
+                <h1> Hi, I'm <span> Kaia </span> <br>& I am based in Australia.</h1>
+
+            </div>
+        </div>
+        <!----------------about-------------------------->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src='images/Dyson_pure_big.png' class="dyson_pure_image">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="sub-title" style="margin-bottom: 40px;">About Me</h1>
+
+                    <p>A highly motivated Master of Information Technology’s student in UNSW and an ex mechanical
+                        engineer from Dyson with
+                        specialization in structural simulation. Heavy involvement in developing new test methods at
+                        Dyson that could identify
+                        manufacturing issues and ensure Dyson Environmental Care’s product quality. Contributed to
+                        publications in biomedical
+                        field during degree time in the University of Sydney.</p>
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>LANGUAGES</span><br> Fluent in English, Mandarin and Malay; limited working
+                                proficiency in Cantonese</li>
+                            <li><span>PROGRAMMING LANGUAGES</span><br> MATLAB, Python, SQL, HTML, CSS</li>
+                            <li><span>SOFTWARES </span><br>Unreal Engines, Ansys, Ls-Dyna, Meta, LS-PrePost, Moldflow
+                            </li>
+                            <li><span>CERTIFICATION</span><br>Autodesk Moldflow Associate Level Certification</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>DYSON; September 2019 – July 2022</span><br> Mechanical Analysis Engineer in
+                                Environmental Care Technology Development, Dyson</li>
+                            <li>&nbsp;</li>
+                            <li> Projects involved:
+                                <strong>Dyson Purifier Big + Quiet</strong>;
+                                <strong>Dyson Zone</strong>;
+                                <strong>Dyson Pure Cool TP04</strong>;
+                                <strong>Dyson Purifier Humidify + Cool PH03</strong>
+                            <li>&nbsp;</li>
+                            <li> Main responsibilities:</li>
+                            <li>• Developed new structural testing methodology and ensured it is robust to be
+                                implemented into multiple stages of product development. </li>
+                            <li>• Mentored design engineers on samples preparation, test planning and data analysing for
+                                developing new test method.</li>
+                            <li>• Advised on risk in design changes by using structural analysis modelling in ANSYS to
+                                ensure new design iteration could meet the robustness requirement. </li>
+                            <li>• Conducted injection moulding simulation using Moldflow Insight to improve flow and
+                                ensure mouldability. </li>
+                            <li>• Carried out validation and verification studies of material mechanical properties
+                                using simulation and physical testing to ensure correct decisions are made on proven
+                                data. </li>
+                            <li>• Developed programming script to improve daily work’s efficiency using Python. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id='education'>
+                        <ul>
+                            <li><span>September 2022 - September 2024</span><br> Master of Information Technology |
+                                University of New South Wales, Australia </li>
+                            <li><span>2015 - 2018</span><br>Bachelor of Mechanical Engineering (with Honours) |
+                                University of Sydney, Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--PORTFOLIO-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <ul id="accordian">
+                <li>
+                    <label for="first">1. Python Projects<span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="first" checked>
+                    <div class="content">
+                        <p> <strong>Project Name: Real-Time Human Gym Pose Detection | Grade awarded: 82 [ Distinction
+                                ]</strong></p>
+                        <p> The "Real-Time Human Gym Pose Detection" is an innovative project that combines fitness
+                            tracking with artificial intelligence for squats, biceps curls and overhead press. The
+                            system that me and my teammates developed will be able to recognize the type of exercise
+                            that the mp4 video file inputs. The real time application can count the repetitions of the
+                            exercise and come up with the accurate exercise prediction. The results of the program are
+                            displayed in the following tab, labeled 1.1. </p>
+                    </div>
+                </li>
+                <li>
+                    <label for="second" style="font-weight: normal;">1.1 Real-Time Human Gym Pose Detection <span>
+                            &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="second">
+                    <div class="content">
+                        <video controls autoplay loop width="600">
+                            <source src="Curls_blur.mp4">
+                        </video>
+                    </div>
+                </li>
+                <li>
+                    <label for="third"> 2. Game Development Project Using Unreal Engine<span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="third">
+                    <div class="content">
+                        <p>Below are the projects I'm currently working on. Please see the following tabs for more
+                            detailed information on each project!</p>
+                        <p> <strong>Project 1: Ramsay's Hell Intern </strong></p>
+                        <p> <strong>Project 2: Research Project - A Comparative Analysis of Circuit Construction
+                                Learning Outcomes in VR with and without an Avatar Instructor for Electrical Lab in
+                                UNSW</strong></p>
+                    </div>
+                </li>
+                <li>
+                    <label for="forth" style="font-weight: normal;">2.1 Ramsay's Hell Intern Trailer<span>
+                            &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="forth">
+                    <div class="content">
+
+                        <p> <strong> Game Name: Ramsay's Hell Intern | Grade awarded: 83 [ Distinction ] </strong></p>
+                        <p> Ramsay’s Hell Intern is a ground-breaking culinary simulation and competitive gaming
+                            experience inspired by the renowned television series, Hell's Kitchen. The game features an
+                            AI-driven character modeled after the celebrated chef, Gordon Ramsay, providing an immersive
+                            mentoring experience for players. In Ramsay’s Hell Intern, I played a crucial role in
+                            developing Level 0, the foundational stage of the game and the fine-tuning of the Ramsay
+                            character in CONVAI. This level serves as an essential learning phase, where players, in the
+                            role of interns, are guided through the vital mouse & keyboard setting on how to perform
+                            basics of culinary arts. I have edited the trailer, which can be viewed below. </p>
+                        <video controls autoplay muted loop width="600">
+                            <source src="Pixel_Ramsay_Hell_Intern_Trailer.mp4">
+                        </video>
+
+
+                    </div>
+                </li>
+                <li>
+                    <label for="fifth" style="font-weight: normal;">2.2 Research Project: A Comparative Analysis of
+                        Circuit Construction Learning Outcomes in VR with and without an Avatar Instructor for
+                        Electrical Lab in UNSW<span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="fifth">
+                    <div class="content">
+                        <p> This research project evaluates the effectiveness of using Virtual Reality (VR) in an
+                            electrical engineering lab, comparing the learning outcomes of circuit construction between
+                            VR settings with an avatar instructor and traditional lab environments. It aims to address
+                            the challenges faced by educational institutions during situations like the COVID-19
+                            pandemic, by using VR to offer immersive and interactive learning experiences without the
+                            need for physical lab equipment. The study will assess variables such as student engagement,
+                            proficiency in building circuits, and perceptions of the AI-driven instructor, with the goal
+                            of enhancing educational methods and reducing costs. [Full trailer coming soon!]</p>
+                        <img src="VR menu.png" alt="Menu" width="600px" height="350px">
+                    </div>
+                </li>
+
+                <li>
+                    <label for="sixth"> 3. Publication<span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="sixth">
+                    <div class="content">
+                        <p> During my final year at the University of Sydney (USYD), I was fortunate to be involved in
+                            two significant research projects listed below. These opportunities were not just a
+                            practical application of my academic knowledge, but it also provided me a profound insights
+                            into the role of engineering in contributing to societal betterment. </p>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2590049821000588"
+                            style="color: blue;">• Mechanically robust nitrogen-rich plasma polymers: Biofunctional
+                            interfaces for surface engineering of biomedical implants</a><br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S1742706120302178"
+                            style="color: blue;">• A multifaceted biomimetic interface to improve the longevity of
+                            orthopedic implants</a>
+                    </div>
+                </li>
+
+                <li>
+                    <label for="seventh"> 4. Front - End Projects <span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="seventh">
+                    <div class="content">
+                        <p> Below are the projects I had worked on for front-end objects. Please see the following tabs
+                            for more detailed information on each project!</p>
+                        <p> Project 4.1: Recreate Slides.com </p>
+                        <p> Project 4.2: My own portfolio that you are currently looking at!</p>
+
+                    </div>
+                </li>
+                <li>
+                    <label for="eighth" style="font-weight: normal;"> 4.1 Recreate Slides.com <span> &#x3e;</span></label>
+                    <input type="radio" name="accordian" id="eighth">
+                    <div class="content">
+                        <p>In this project, I recreated the functionality of Slides.com, allowing users to create,
+                            and present presentations.</p>
+                        <p> <strong>Language used: </strong>ReactJS</p>
+                        <p><strong>Testing: </strong> Component testing, UI testing</p>
+                        <p><strong>Code Quality: </strong> Implemented ESLint for linting</p>
+                        <br>
+                        <h3>Key Features:</h3>
+                        <p style="text-decoration: underline;">User Authentication:</strong></p>
+                        <p>- Login and registration functionality with error handling.</p>
+                        <p>- Seamless transition to dashboard upon successful login.</p>
+
+                        <p style="text-decoration: underline;"><strong>Presentation Management:</strong></p>
+                        <p>- Intuitive interface for creating, editing, and deleting presentations.</p>
+                        <p>- Ability to add and delete slides with ease.</p>
+                        <p>- Supports various content types, including text, images, videos, and code blocks.</p>
+
+                        <p style="text-decoration: underline;"><strong>Full-Screen Presentation Mode:</strong></p>
+                        <p>- Allows users to present their slides in a full-screen mode for immersive viewing and engagement.</p>
+                        <p style="text-decoration: underline;"><strong>Customization Options:</strong></p>
+                        <p>- Allows users to personalize presentation titles, thumbnails, and background themes.</p>
+                        <p>- Provides font adjustment for text elements to enhance visual appeal.</p>
+
+                        <p style="text-decoration: underline;"><strong>URL Updating:</strong></p>
+                        <p>- Reflects slide number in the URL for seamless navigation.</p>
+                        <div class="content-presto">
+                            <video controls width="600">
+                                <source src="Presto.mp4">
+                            </video>
+                        </div>
+
+                    </div>
+                </li>
             </ul>
-            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
-        </nav>
-        <div class = "header-text">
-            <p> Mechanical & Simulation Engineer |  Game Developer </p>
-            <h1> Hi, I'm <span> Kaia </span> <br>& I am based in Australia.</h1>
 
         </div>
-    </div>
-<!----------------about-------------------------->
-</div>
-<div id="about">
-    <div class ="container">
-        <div class="row">
-            <div class="about-col-1">
-               <img src = 'images/Dyson_pure_big.png' class="dyson_pure_image">
-            </div>
-            <div class="about-col-2">
-                
-                <h1 class="sub-title" style="margin-bottom: 40px;">About Me</h1>
-                
-                <p>A highly motivated Master of Information Technology’s student in UNSW and an ex mechanical engineer from Dyson with
-                    specialization in structural simulation. Heavy involvement in developing new test methods at Dyson that could identify
-                    manufacturing issues and ensure Dyson Environmental Care’s product quality. Contributed to publications in biomedical 
-                    field during degree time in the University of Sydney.</p>
-                <div class="tab-titles">
-
-                    <p class = "tab-links active-link"onclick = "opentab('education')">Education</p>
-                    <p class = "tab-links" onclick = "opentab('skills')">Skills</p>
-                    <p class = "tab-links "onclick = "opentab('experience')">Experience</p>
-                    
-                </div>
-                <div class="tab-contents " id ="skills">
-                    <ul>
-                        <li><span>LANGUAGES</span><br> Fluent in English, Mandarin and Malay; limited working proficiency in Cantonese</li>
-                        <li><span>PROGRAMMING LANGUAGES</span><br> MATLAB, Python, SQL, HTML, CSS</li>
-                        <li><span>SOFTWARES </span><br>Unreal Engines, Ansys, Ls-Dyna, Meta, LS-PrePost, Moldflow</li>
-                        <li><span>CERTIFICATION</span><br>Autodesk Moldflow Associate Level Certification</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents " id ="experience">
-                    <ul>
-                        <li><span>DYSON; September 2019 – July 2022</span><br> Mechanical Analysis Engineer in Environmental Care Technology Development, Dyson</li>
-                        <li>&nbsp;</li>
-                        <li> Projects involved: 
-                            <strong>Dyson Purifier Big + Quiet</strong>; 
-                            <strong>Dyson Zone</strong>; 
-                            <strong>Dyson Pure Cool TP04</strong>; 
-                            <strong>Dyson Purifier Humidify + Cool PH03</strong>
-                        <li>&nbsp;</li>
-                        <li> Main responsibilities:</li>
-                        <li>•	Developed new structural testing methodology and ensured it is robust to be implemented into multiple stages of product development. </li>
-                        <li>•	Mentored design engineers on samples preparation, test planning and data analysing for developing new test method.</li> 
-                        <li>•	Advised on risk in design changes by using structural analysis modelling in ANSYS to ensure new design iteration could meet the robustness requirement. </li> 
-                        <li>•	Conducted injection moulding simulation using Moldflow Insight to improve flow and ensure mouldability.  </li>
-                        <li>•	Carried out validation and verification studies of material mechanical properties using simulation and physical testing to ensure correct decisions are made on proven data.  </li>
-                        <li>•	Developed programming script to improve daily work’s efficiency using Python. </li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents active-tab" id = 'education'>
-                    <ul>
-                        <li><span>September 2022 - September 2024</span><br> Master of Information Technology | University of New South Wales, Australia </li>
-                        <li><span>2015 - 2018</span><br>Bachelor of Mechanical Engineering (with Honours) | University of Sydney, Australia</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
     </div>
+    <!--contact-->
 
-</div>
-<!--PORTFOLIO-->
-<div id = "portfolio">
-    <div class = "container">
-        <h1 class = "sub-title"> My Work </h1>
-        <ul id = "accordian">
-            <li>
-                <label for="first">1. Python Projects<span> &#x3e;</span></label>
-                <input type = "radio" name = "accordian" id ="first" checked>
-                <div class = "content">
-                    <p> <strong>Project Name: Real-Time Human Gym Pose Detection | Grade awarded: 82 [ Distinction ]</strong></p>
-                    <p> The "Real-Time Human Gym Pose Detection" is an innovative project that combines fitness tracking with artificial intelligence for squats, biceps curls and overhead press. The system that me and my teammates developed will be able to recognize the type of exercise that the mp4 video file inputs. The real time application can count the repetitions of the exercise and come up with the accurate exercise prediction. The results of the program are displayed in the following tab, labeled 1.1. </p>
-                </div>
-            </li>
-            <li>
-                <label for="second" style="font-weight: normal;">1.1 Real-Time Human Gym Pose Detection <span> &#x3e;</span></label>
-                <input type = "radio" name = "accordian" id ="second" >
-                <div class = "content">
-                    <video controls autoplay loop width = "600">
-                        <source src="Curls_blur.mp4">
-                    </video>
-                </div>
-            </li>
-            <li>
-                <label for="third"> 2. Game Development Project Using Unreal Engine<span> &#x3e;</span></label>
-                <input type = "radio" name = "accordian" id ="third" >
-                <div class = "content">
-
-                    <p> <strong>Game Name: Ramsay's Hell Intern | Grade awarded: 83 [ Distinction ] </strong></p>
-                    <p> Ramsay’s Hell Intern is a ground-breaking culinary simulation and competitive gaming experience inspired by the renowned television series, Hell's Kitchen. The game features an AI-driven character modeled after the celebrated chef, Gordon Ramsay, providing an immersive mentoring experience for players. In Ramsay’s Hell Intern, I played a crucial role in developing Level 0, the foundational stage of the game and the fine-tuning of the Ramsay character in CONVAI. This level serves as an essential learning phase, where players, in the role of interns, are guided through the vital mouse & keyboard setting on how to perform basics of culinary arts. I have edited the trailer, which can be viewed in the subsequent tab 2.1 below.  </p>
-                    
-
-                </div>
-            </li>
-            <li>
-                <label for="forth" style="font-weight: normal;">2.1 Ramsay's Hell Intern Trailer<span> &#x3e;</span></label>
-
-
-                <input type = "radio" name = "accordian" id ="forth" >
-                <div class = "content">
-
-                    <p> <strong> Game Name: Ramsay's Hell Intern | Grade awarded: 83 [ Distinction ] </strong></p>
-                    <video controls autoplay muted loop width = "600">
-                        <source src="Pixel_Ramsay_Hell_Intern_Trailer.mp4">
-                    </video>
-                                        
-
-                </div>
-            </li>
-            
-            <li>
-                <label for="fifth"> 3. Publication<span> &#x3e;</span></label>
-                <input type = "radio" name = "accordian" id ="fifth" >
-                <div class = "content">
-                    <p> During my final year at the University of Sydney (USYD), I was fortunate to be involved in two significant research projects listed below. These opportunities were not just a practical application of my academic knowledge, but it also provided me a profound insights into the role of engineering in contributing to societal betterment.  </p>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S2590049821000588" style="color: blue;">• Mechanically robust nitrogen-rich plasma polymers: Biofunctional interfaces for surface engineering of biomedical implants</a><br>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S1742706120302178" style="color: blue;">• A multifaceted biomimetic interface to improve the longevity of orthopedic implants</a>
-                </div>
-            </li>
-
-            <li>
-                <label for="sixth"> 4. Front - End Projects <span> &#x3e;</span></label>
-                <input type = "radio" name = "accordian" id ="sixth" >
-                <div class = "content">
-                    <p>I demonstrated my proficiency in HTML and CSS by designing and customizing my own portfolio. Additionally, I am in the process of enhancing my skills by attempting to replicate various websites.</p>
-                </div>
-            </li>
-        </ul>
-
-    </div>
-
-</div>
-<!--contact-->
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-
-    } 
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-        
-    } 
-</script>
-<script>
-    // Your JavaScript code goes here
-    document.querySelectorAll('#accordian input[type="radio"]').forEach(input => {
-        input.addEventListener('change', function() {
-            if(this.checked) {
-                let content = this.nextElementSibling;
-                content.style.height = content.scrollHeight + 'px';
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        } 
+    </script>
+    <script>
+        document.querySelectorAll('#accordian input[type="radio"]').forEach(input => {
+            input.addEventListener('change', function () {
+                let accordion = document.querySelectorAll('#accordian .content');
+                accordion.forEach(panel => {
+                    if (panel.previousElementSibling.checked) {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } else {
+                        panel.style.maxHeight = null;
+                    }
+                });
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
